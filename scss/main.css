@@ -145,6 +145,7 @@ html, body {
 .about {
   min-height: 100vh;
   background: linear-gradient(to right, #afafaf, #ffffff);
+  position: relative;
 }
 .about .menu-contenitore {
   margin: 0;
@@ -183,6 +184,107 @@ html, body {
 .about .menu-contenitore .pagina {
   color: #f25903;
   font-size: 21px;
+}
+.about .paragrafo {
+  position: absolute;
+  margin-top: 200px;
+  margin-right: 1000px;
+  margin-left: 165px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+}
+.about .paragrafo h1 {
+  margin-bottom: 45px;
+  color: hsl(15, 100%, 47%);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 320;
+}
+.about .freccia {
+  position: absolute;
+  display: flex;
+  margin-top: 145px;
+  margin-left: 1075px;
+  transform: rotate(-27deg);
+}
+.about .indicazioni h2 {
+  position: absolute;
+  margin-top: 265px;
+  margin-left: 1220px;
+  text-align: center;
+  inline-size: 20px;
+  font-family: "VendSans", sans-serif;
+  color: #f25903;
+  font-size: 24px;
+  font-weight: 400;
+}
+.about .lente-contenitore .lente {
+  margin-left: 220px;
+  margin-top: 23px;
+}
+.about .lente-contenitore .icone {
+  display: flex;
+}
+.about .lente-contenitore .icone .manubrio {
+  position: absolute;
+  margin-top: -520px;
+  margin-left: 825px;
+}
+.about .lente-contenitore .icone .ballo {
+  position: absolute;
+  margin-top: -285px;
+  margin-left: 835px;
+}
+.about .lente-contenitore .icone .binocolo {
+  position: absolute;
+  margin-top: -465px;
+  margin-left: 930px;
+}
+.about .lente-contenitore .icone .salvadanaio {
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 945px;
+}
+.about .lente-contenitore .icone .aereo {
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 730px;
+}
+.about .lente-contenitore .icone .macchina-fotografica1 {
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 730px;
+}
+.about .lente-contenitore .colore {
+  display: flex;
+}
+.about .lente-contenitore .colore img {
+  margin-top: -460px;
+  margin-left: 780px;
+  filter: brightness(75%);
+  transition: 0.1s;
+  filter: hue-rotate(145deg) saturate(600%);
+}
+.about .lente-contenitore .colore h2 {
+  margin-top: -420px;
+  margin-left: 815px;
+  font-size: 27px;
+  line-height: 40px;
+  font-family: "VendSans", sans-serif;
+  z-index: 3;
+}
+.about .lente-contenitore .colore h2 a {
+  text-decoration: none;
+  color: #272727;
+  padding: 5px;
+}
+.about .lente-contenitore .colore h2 a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  opacity: 0.9;
 }
 
 * {

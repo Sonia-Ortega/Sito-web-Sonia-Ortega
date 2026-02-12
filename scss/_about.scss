@@ -44,6 +44,7 @@ html, body {
 .about {
     min-height: 100vh;
     background:  linear-gradient(to right, #afafaf, #ffffff);
+    position: relative;
 
   .menu-contenitore {
     margin: 0;
@@ -89,9 +90,143 @@ html, body {
       .pagina {
         color: $secondary-color;
         font-size: 21px;
-      }    
+      }   
       
   }
+
+  .paragrafo {
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 1000px;
+    margin-left: 165px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+
+    h1 {
+      margin-bottom: 45px;
+      color: $third-color;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 320;
+    }
+  }
+
+  .freccia {
+    position: absolute;
+    display: flex;
+    margin-top: 145px;
+    margin-left: 1075px;
+    transform: rotate(-27deg);
+
+  }
+
+  .indicazioni {
+    h2 {
+      position: absolute;
+      margin-top: 265px;
+      margin-left: 1220px;
+      text-align: center;
+      inline-size: 20px;
+      font-family: "VendSans", sans-serif;
+      color: $secondary-color;
+      font-size: 24px;
+      font-weight: 400;
+    }  
+  }
+
+  .lente-contenitore {
+    
+    .lente {
+      
+      margin-left: 220px;
+      margin-top: 23px;
+    }
+
+    .icone {
+      display: flex;
+      
+      
+       .manubrio {
+        position: absolute;
+        margin-top: -520px;
+        margin-left: 825px;
+       }
+
+       .ballo {
+        position: absolute;
+        margin-top: -285px;
+        margin-left: 835px;
+       }
+
+       .binocolo {
+        position: absolute;
+        margin-top: -465px;
+        margin-left: 930px;
+       }
+
+       .salvadanaio {
+        position: absolute;
+        margin-top: -350px;
+        margin-left: 945px;
+       }
+
+       .aereo {
+        position: absolute;
+        margin-top: -450px;
+        margin-left: 730px;
+       
+       }
+
+       .macchina-fotografica1 {
+        position: absolute;
+        margin-top: -350px;
+        margin-left: 730px;
+       
+       }
+
+    }
+
+    .colore {
+      display: flex;
+       
+      img {
+         
+         margin-top: -460px;
+         margin-left: 780px;
+         filter: brightness(75%);
+         transition: .10s;
+        filter: hue-rotate(145deg) saturate(600%);
+    
+        }
+      
+      h2 {
+        margin-top: -420px;
+        margin-left: 815px;
+        font-size: 27px;
+        line-height: 40px;
+        font-family: "VendSans", sans-serif;
+        z-index: 3;
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          padding: 5px;
+
+            &:hover { 
+            transform: scale(1.1);
+            transition: 0.3s ease;
+            opacity: 0.9;
+            }
+        }
+        
+      }
+
+    }
+
+  }
+
 }
 
 
