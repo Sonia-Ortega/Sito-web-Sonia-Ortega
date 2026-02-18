@@ -563,8 +563,9 @@ html, body {
 }
 .passioni .foto-viaggi .puntina-ecuador {
   position: absolute;
-  margin-top: 180px;
+  margin-top: 190px;
   margin-left: 150px;
+  transform: rotate(-8deg);
 }
 .passioni .foto-viaggi .siviglia {
   background-color: #ffffff;
@@ -575,6 +576,11 @@ html, body {
   box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
   transform: rotate(-12deg);
 }
+.passioni .foto-viaggi .puntina-siviglia {
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 390px;
+}
 .passioni .foto-viaggi .madeira {
   background-color: #ffffff;
   padding: 8px 5px 25px 5px;
@@ -584,6 +590,12 @@ html, body {
   box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
   transform: rotate(2.5deg);
 }
+.passioni .foto-viaggi .puntina-madeira {
+  position: absolute;
+  margin-top: 430px;
+  margin-left: 155px;
+  transform: rotate(-10deg);
+}
 .passioni .foto-viaggi .galapagos {
   background-color: #ffffff;
   padding: 8px 5px 25px 5px;
@@ -592,6 +604,12 @@ html, body {
   margin-left: 1000px;
   box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
   transform: rotate(15deg);
+}
+.passioni .foto-viaggi .puntina-galapagos {
+  position: absolute;
+  margin-top: 65px;
+  margin-left: 1005px;
+  transform: rotate(-10deg);
 }
 .passioni .foto-viaggi .amsterdam {
   background-color: #ffffff;
@@ -603,6 +621,13 @@ html, body {
   transform: rotate(-15deg);
   z-index: 1;
 }
+.passioni .foto-viaggi .puntina-amsterdam {
+  position: absolute;
+  margin-top: 105px;
+  margin-left: 1315px;
+  transform: rotate(10deg);
+  z-index: 2;
+}
 .passioni .foto-viaggi .valencia {
   background-color: #ffffff;
   padding: 8px 5px 25px 5px;
@@ -611,6 +636,12 @@ html, body {
   margin-left: 1070px;
   box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
   transform: rotate(-12deg);
+}
+.passioni .foto-viaggi .puntina-valencia {
+  position: absolute;
+  margin-top: 290px;
+  margin-left: 1130px;
+  transform: rotate(-5deg);
 }
 .passioni .foto-viaggi .egitto {
   background-color: #ffffff;
@@ -621,6 +652,13 @@ html, body {
   box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
   transform: rotate(8deg);
   z-index: 2;
+}
+.passioni .foto-viaggi .puntina-egitto {
+  position: absolute;
+  margin-top: 345px;
+  margin-left: 1280px;
+  transform: rotate(-10deg);
+  z-index: 3;
 }
 .passioni .divisorio {
   display: block;
