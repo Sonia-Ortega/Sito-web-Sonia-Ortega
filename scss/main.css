@@ -441,4 +441,195 @@ html, body {
 .contact .menu-contenitore .pagina {
   color: #f25903;
   font-size: 21px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "VendSans";
+  src: url("../Vend_Sans/VendSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "VendSans";
+  src: url("../Vend_Sans/VendSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Google_Sans_Code";
+  src: url("../Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "VendSans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.passioni {
+  min-height: 100vh;
+  background: linear-gradient(to right, #afafaf, #ffffff);
+}
+.passioni .menu-contenitore {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.passioni .menu-contenitore .icona {
+  display: flex;
+  justify-content: first baseline;
+}
+.passioni .menu-contenitore a {
+  display: inline-flex;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 7px;
+  margin-left: 30px;
+}
+.passioni .menu-contenitore a:hover img {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+  opacity: 0.8;
+}
+.passioni .paragrafo-1 {
+  display: flex;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 65px;
+  text-align: center;
+  inline-size: 300px;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+  padding-top: 0;
+}
+.passioni .paragrafo-2 {
+  display: flex;
+  position: absolute;
+  margin-top: 640px;
+  margin-left: 1025px;
+  text-align: center;
+  inline-size: 430px;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+  padding-bottom: 0;
+}
+.passioni .mondo {
+  display: flex;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 175px;
+  filter: invert(-1) brightness(1.4) contrast(1.2);
+  opacity: 0.6;
+}
+.passioni .foto-viaggi {
+  display: flex;
+}
+.passioni .foto-viaggi P {
+  font-family: "VendSans", sans-serif;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 14px;
+}
+.passioni .foto-viaggi .ecuador {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 100px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(8deg);
+}
+.passioni .foto-viaggi .puntina-ecuador {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 150px;
+}
+.passioni .foto-viaggi .siviglia {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(-12deg);
+}
+.passioni .foto-viaggi .madeira {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 165px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(2.5deg);
+}
+.passioni .foto-viaggi .galapagos {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1000px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(15deg);
+}
+.passioni .foto-viaggi .amsterdam {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 1240px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+.passioni .foto-viaggi .valencia {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 315px;
+  margin-left: 1070px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(-12deg);
+}
+.passioni .foto-viaggi .egitto {
+  background-color: #ffffff;
+  padding: 8px 5px 25px 5px;
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 1230px;
+  box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+  transform: rotate(8deg);
+  z-index: 2;
+}
+.passioni .divisorio {
+  display: block;
+  margin-top: 710px;
+  font-size: 30px;
+  text-align: center;
+}
+.passioni .aereo {
+  margin-top: -40px;
+  margin-left: 655px;
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
