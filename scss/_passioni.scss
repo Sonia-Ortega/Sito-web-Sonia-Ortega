@@ -45,12 +45,15 @@ body {
 html, body {
   height: 100%;
   margin: 0;
+ 
 }
 
 
 .passioni {
     min-height: 100vh;
     background:  linear-gradient(to right, #afafaf, #ffffff);
+    background-size: cover;
+    padding-bottom: 140px;
 
   .menu-contenitore {
     margin: 0;
@@ -120,7 +123,7 @@ html, body {
       P {
         font-family: "VendSans", sans-serif;
         text-align: center;
-        padding-top: 12px;
+        margin-top: 25px;
         font-size: 14px;
                 
       }
@@ -129,7 +132,7 @@ html, body {
 
       .ecuador {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px;
         position: absolute;
         margin-top: 220px;
         margin-left: 100px;
@@ -147,7 +150,7 @@ html, body {
 
        .siviglia {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 300px;
         margin-left: 300px;
@@ -163,7 +166,7 @@ html, body {
       
        .madeira {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 450px;
         margin-left: 165px;
@@ -180,7 +183,7 @@ html, body {
 
        .galapagos {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 100px;
         margin-left: 1000px;
@@ -197,7 +200,7 @@ html, body {
 
        .amsterdam {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 130px;
         margin-left: 1240px;
@@ -216,7 +219,7 @@ html, body {
 
        .valencia {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 315px;
         margin-left: 1070px;
@@ -233,7 +236,7 @@ html, body {
 
       .egitto {
         background-color: #ffffff;
-        padding: 8px 5px 25px 5px ;
+        padding: 8px 5px 20px 5px ;
         position: absolute;
         margin-top: 370px;
         margin-left: 1230px;
@@ -259,13 +262,17 @@ html, body {
       text-align: center;
     }
 
-    .aereo {
-      margin-top: -40px;
-      margin-left: 655px;
-      position: absolute;
-
+    .freccia {
+      margin-top: 595px;
+      margin-left: 680px;
+      padding-bottom: 80px;
+      z-index: 5;
+      transform: rotate(90deg);
+      
 
     }
+
+    
 
     
     
