@@ -29,6 +29,13 @@
   font-display: swap;
   }
 
+  @mixin primary-text {
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;}
+
 body {
   font-family: "VendSans", sans-serif;
   
@@ -91,4 +98,181 @@ html, body {
       }    
       
   }
+
+  .project {
+  padding: 70px 10% 50px;
+  text-align: center;
+  font-family: "VendSans", sans-serif;
+
+
+  .progetto-1 {
+    margin-bottom: 20px;
+    margin-top: 15px;
+   
+
+    h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-family: "VendSans", sans-serif;
+      font-weight: 450;
+      color: $secondary-color;
+     
+    }
+
+    p {
+      margin: auto;
+      @include primary-text;
+    }
+  }
+
+  .immagini {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    margin-bottom: -45px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .telefono {
+    width: 300px;
+  }
+
+  .pc {
+    width: 570px;
+  }
+
+  .elenco {
+    text-align: center;
+    margin-top: -160px;
+    inline-size: 700px;
+    position: relative;
+    margin-left: 470px;
+
+
+
+  .titolo-elenco {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: "VendSans", sans-serif;
+    font-weight: 450;
+    color: $secondary-color;
+    }
+
+  .liste {
+    display: flex;
+    justify-content: right;
+    gap: 80px;
+    text-align: left;
+    @include primary-text; 
+     
+
+    ul {
+      list-style: disc;
+
+      li {
+        line-height: 25px;
+        font-size: 15px;
+        color: $primary-color;
+      }
+    }
+  }
+   }
 }
+
+ .project-2 {
+  padding: 60px 10% 45px;
+  text-align: center;
+  font-family: "VendSans", sans-serif;
+
+
+  .progetto-2 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+   
+
+    h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-family: "VendSans", sans-serif;
+      font-weight: 450;
+      color: $secondary-color;
+     
+    }
+
+    p {
+      margin: auto;
+      @include primary-text;
+      inline-size: 1100px;
+      line-height: 35px;
+      padding-bottom: -20px;
+    }
+  }
+
+  .immagini-elenco {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding-top: 10px;
+  
+  .elenco-2 {
+    inline-size: 400px;
+    text-align: left;
+    @include primary-text;
+    line-height: 35px;
+    margin-top: 10px;
+  }
+
+   .titolo-elenco {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: -25px;
+    font-family: "VendSans", sans-serif;
+    font-weight: 450;
+    color: $secondary-color;
+    }
+
+    .immagine-tablet {
+    position: relative;
+    width: 590px;
+
+.tablet{
+  width: 600px;
+  height: 450px;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.tablet-schermo{
+  position: absolute;
+  top: 30px;      // regola finché combacia con lo schermo
+  left: 20px;
+  width: 565px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.tablet-schermo img{
+  width: 550px;
+  height: 392px;
+  object-fit: cover;
+}
+}
+
+  }
+
+  }
+  
+}
+
+

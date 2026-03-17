@@ -364,6 +364,162 @@ html, body {
   color: #f25903;
   font-size: 21px;
 }
+.work .project {
+  padding: 70px 10% 50px;
+  text-align: center;
+  font-family: "VendSans", sans-serif;
+}
+.work .project .progetto-1 {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.work .project .progetto-1 h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "VendSans", sans-serif;
+  font-weight: 450;
+  color: #f25903;
+}
+.work .project .progetto-1 p {
+  margin: auto;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+}
+.work .project .immagini {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  margin-bottom: -45px;
+}
+.work .project .immagini img {
+  max-width: 100%;
+  height: auto;
+}
+.work .project .telefono {
+  width: 300px;
+}
+.work .project .pc {
+  width: 570px;
+}
+.work .project .elenco {
+  text-align: center;
+  margin-top: -160px;
+  inline-size: 700px;
+  position: relative;
+  margin-left: 470px;
+}
+.work .project .elenco .titolo-elenco {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "VendSans", sans-serif;
+  font-weight: 450;
+  color: #f25903;
+}
+.work .project .elenco .liste {
+  display: flex;
+  justify-content: right;
+  gap: 80px;
+  text-align: left;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+}
+.work .project .elenco .liste ul {
+  list-style: disc;
+}
+.work .project .elenco .liste ul li {
+  line-height: 25px;
+  font-size: 15px;
+  color: #272727;
+}
+.work .project-2 {
+  padding: 60px 10% 45px;
+  text-align: center;
+  font-family: "VendSans", sans-serif;
+}
+.work .project-2 .progetto-2 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.work .project-2 .progetto-2 h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: "VendSans", sans-serif;
+  font-weight: 450;
+  color: #f25903;
+}
+.work .project-2 .progetto-2 p {
+  margin: auto;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+  inline-size: 1100px;
+  line-height: 35px;
+  padding-bottom: -20px;
+}
+.work .project-2 .immagini-elenco {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding-top: 10px;
+}
+.work .project-2 .immagini-elenco .elenco-2 {
+  inline-size: 400px;
+  text-align: left;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+.work .project-2 .immagini-elenco .titolo-elenco {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: -25px;
+  font-family: "VendSans", sans-serif;
+  font-weight: 450;
+  color: #f25903;
+}
+.work .project-2 .immagini-elenco .immagine-tablet {
+  position: relative;
+  width: 590px;
+}
+.work .project-2 .immagini-elenco .immagine-tablet .tablet {
+  width: 600px;
+  height: 450px;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+}
+.work .project-2 .immagini-elenco .immagine-tablet .tablet-schermo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 565px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 2;
+}
+.work .project-2 .immagini-elenco .immagine-tablet .tablet-schermo img {
+  width: 550px;
+  height: 392px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 * {
   margin: 0;
