@@ -50,18 +50,42 @@ html, body {
 .work {
     min-height: 100vh;
     background:  linear-gradient(to right, #afafaf, #ffffff);
+    position: relative;
 
   .menu-contenitore {
     margin: 0;
     padding: 0;
+    height: 60px;
     background-color: $primary-color;
     position: fixed;
+    display: flex;
     width: 100%;
+    overflow: hidden;
+    height: 49px;
+    
+    
     
 
     .menu {
       display: flex;
-      justify-content: space-around;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px 15px 65px;
+
+      #instagram {
+         margin-bottom: 7px;
+         
+
+      }
+      
+      #whatsapp {
+        margin-bottom: 7px;
+        padding-right: 10px;
+      }
+     
+
+     
     }
 
       li {
@@ -70,18 +94,25 @@ html, body {
         list-style: none;
         align-items:center; 
         font-size: 15.5px; 
-        padding: 1px;
+        justify-content: space-between;
+        margin-top: 15px;
+        font-family: "VendSans", sans-serif;
+        padding-right: 60px;
+        
+    
       }
 
       a {
         text-decoration: none;
         color: white;
         padding: 5px;
+        
 
         &:hover { 
           transform: scale(1.2);
           transition: 0.3s ease;
           opacity: 0.8;
+    
         }
 
         &:hover img {
@@ -95,19 +126,23 @@ html, body {
       .pagina {
         color: $secondary-color;
         font-size: 21px;
+        
       }    
       
   }
 
   .project {
-  padding: 70px 10% 50px;
+  padding-top: 80px;
+  padding-left: 10%; 
+  padding-right: 10%;
+  padding-bottom: 50px;
   text-align: center;
   font-family: "VendSans", sans-serif;
 
 
   .progetto-1 {
     margin-bottom: 20px;
-    margin-top: 15px;
+    margin-top: 8px;
    
 
     h1 {
@@ -152,6 +187,7 @@ html, body {
     margin-top: -160px;
     inline-size: 700px;
     position: relative;
+    margin-top: -160px;
     margin-left: 470px;
 
 
@@ -187,7 +223,7 @@ html, body {
 }
 
  .project-2 {
-  padding: 60px 10% 45px;
+  padding: 60px 10% 55px;
   text-align: center;
   font-family: "VendSans", sans-serif;
 
@@ -254,7 +290,7 @@ html, body {
 
 .tablet-schermo{
   position: absolute;
-  top: 30px;      // regola finché combacia con lo schermo
+  top: 30px;      
   left: 20px;
   width: 565px;
   height: 400px;

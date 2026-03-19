@@ -325,17 +325,32 @@ html, body {
 .work {
   min-height: 100vh;
   background: linear-gradient(to right, #afafaf, #ffffff);
+  position: relative;
 }
 .work .menu-contenitore {
   margin: 0;
   padding: 0;
+  height: 60px;
   background-color: #272727;
   position: fixed;
+  display: flex;
   width: 100%;
+  overflow: hidden;
+  height: 49px;
 }
 .work .menu-contenitore .menu {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 15px 65px;
+}
+.work .menu-contenitore .menu #instagram {
+  margin-bottom: 7px;
+}
+.work .menu-contenitore .menu #whatsapp {
+  margin-bottom: 7px;
+  padding-right: 10px;
 }
 .work .menu-contenitore li {
   display: inline-flex;
@@ -343,7 +358,10 @@ html, body {
   list-style: none;
   align-items: center;
   font-size: 15.5px;
-  padding: 1px;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-family: "VendSans", sans-serif;
+  padding-right: 60px;
 }
 .work .menu-contenitore a {
   text-decoration: none;
@@ -365,13 +383,16 @@ html, body {
   font-size: 21px;
 }
 .work .project {
-  padding: 70px 10% 50px;
+  padding-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
   text-align: center;
   font-family: "VendSans", sans-serif;
 }
 .work .project .progetto-1 {
   margin-bottom: 20px;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 .work .project .progetto-1 h1 {
   font-size: 28px;
@@ -411,6 +432,7 @@ html, body {
   margin-top: -160px;
   inline-size: 700px;
   position: relative;
+  margin-top: -160px;
   margin-left: 470px;
 }
 .work .project .elenco .titolo-elenco {
@@ -441,7 +463,7 @@ html, body {
   color: #272727;
 }
 .work .project-2 {
-  padding: 60px 10% 45px;
+  padding: 60px 10% 55px;
   text-align: center;
   font-family: "VendSans", sans-serif;
 }
