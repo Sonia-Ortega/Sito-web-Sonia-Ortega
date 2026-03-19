@@ -62,7 +62,7 @@ html, body {
     width: 100%;
     overflow: hidden;
     height: 49px;
-    
+    z-index: 2;
     
     
 
@@ -199,6 +199,8 @@ html, body {
     font-family: "VendSans", sans-serif;
     font-weight: 450;
     color: $secondary-color;
+    z-index: -1;
+    font-style: italic;
     }
 
   .liste {
@@ -271,7 +273,7 @@ html, body {
     font-size: 20px;
     text-align: center;
     padding-bottom: -25px;
-    font-family: "VendSans", sans-serif;
+    font-family: "VendSans", sans-serif; 
     font-weight: 450;
     color: $secondary-color;
     }
