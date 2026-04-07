@@ -646,13 +646,15 @@ html, body {
   align-items: center;
   padding-top: 10%;
   padding-bottom: 10%;
+  line-height: 35px;
 }
 .contact .form-contatto .testo h1 {
   font-family: "VendSans", sans-serif;
-  font-weight: 550;
+  font-weight: 450;
   letter-spacing: 1px;
   font-style: normal;
   color: hsl(15, 100%, 47%);
+  font-size: 37px;
 }
 .contact .form-contatto .testo .tag {
   width: 100px;
