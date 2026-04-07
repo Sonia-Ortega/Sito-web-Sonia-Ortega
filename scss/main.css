@@ -998,6 +998,8 @@ html, body {
   margin-left: -20px;
   text-align: center;
   padding-bottom: 8px;
+  color: hsl(15, 100%, 47%);
+  font-weight: 400;
 }
 .fotografia .paragrafo-3 {
   line-height: 25px;
