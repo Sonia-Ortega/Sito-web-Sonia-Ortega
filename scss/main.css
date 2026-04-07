@@ -80,7 +80,7 @@ body {
   display: flex;
   position: absolute;
   text-align: center;
-  margin-top: -550px;
+  margin-top: -470px;
   font-size: 45px;
   margin-left: 375px;
   gap: 50px;
@@ -101,7 +101,7 @@ h2 {
   display: flex;
   position: absolute;
   text-align: center;
-  margin-top: -370px;
+  margin-top: -330px;
   margin-left: 880px;
   font-family: "Google_Sans_Code", sans-serif;
   font-weight: 400;
