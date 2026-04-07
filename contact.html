@@ -11,7 +11,7 @@
     <title>Contact - Sonia Ortega</title>
 </head>
 <body> 
-    <div class="contact">
+   <div class="contact">
     <div class="menu-contenitore">
         <ul class="menu">
             <li><a href="index.html">HOME</a></li>
@@ -22,5 +22,64 @@
             <li><a href="https://wa.me/393486603221?text=Ciao%2C%20ti%20contatto%20dal%20tuo%20sito%20web%20per%20maggiori%20informazioni." target="_blank" rel="noopener noreferrer"><img src="immagini/icona-whatsapp.png" alt="icona-whatsapp" height="30px" width="30px"></a></li>
         </ul>
     </div>
+
+    <div class="form-contatto">
+        <div class="testo">
+            <h1>CONTATTAMI</h1>
+            <p>Sono una web developer in formazione che sta imparando strada facendo ed aperta a nuove opportunità di crescita.
+            Se ti va di parlarmi di un progetto o darmi un consiglio, scrivimi pure!
+            </p>
+            <img class="tag" src="immagini/contact/tag.png" alt="tag">
+        </div>
+        <div class="form">
+          <form id="contact-form">
+            <div class="riga">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome" class="input-nome">
+                </div>
+                <div class="campo">
+                    <label for="cognome">Cognome</label>
+                    <br>
+                    <input type="text" name="cognome" class="input-cognome">
+                </div>    
+            </div>
+                    <br>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" name="email" class="input-email">
+                    <br><br>
+                    <label for="messaggio">Messaggio</label>
+                    <br>
+                    <textarea name="messaggio"></textarea> 
+                    <br><br>
+                    <div class="botton">
+                    <input class="input-invio" type="submit" value="Invia messaggio">
+                    </div>
+          </form>
+        </div>
+
+    </div>
+ </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function() {
+  emailjs.init("Q1nir5vc8PzH74MlI"); 
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_ha73zz8", "template_wiwkaz7", this)
+    .then(function() {
+      alert("Messaggio inviato con successo!");
+    }, function(error) {
+      alert("Errore: " + error.text);
+    });
+});
+</script>
 </body>
 </html>
