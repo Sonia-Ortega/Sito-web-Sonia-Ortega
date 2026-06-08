@@ -107,6 +107,143 @@ h2 {
   font-weight: 400;
 }
 
+.menu-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu-responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .menu-contenitore {
+    z-index: 1000;
+  }
+  .menu-contenitore .menu-1 {
+    display: none;
+  }
+  .menu-contenitore ul {
+    margin: 0;
+    padding: 0;
+  }
+  .menu-contenitore ul a {
+    display: block;
+    padding: 20px;
+  }
+  .menu-contenitore ul a:hover {
+    background-color: #f25903;
+  }
+  .menu-contenitore .menu-2 {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .menu-contenitore .menu-icon {
+    padding: 20px 18px 16px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .menu-contenitore .nav-icon {
+    margin-top: 3px;
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+  }
+  .menu-contenitore .nav-icon::before, .menu-contenitore .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    position: absolute;
+  }
+  .menu-contenitore .nav-icon::before {
+    top: 7px;
+  }
+  .menu-contenitore .nav-icon::after {
+    top: -7px;
+  }
+  .menu-contenitore .menu-responsive {
+    display: flex;
+  }
+  .menu-contenitore .menu-responsive .menu-icon {
+    order: 2;
+  }
+  .menu-contenitore .menu-responsive .logo {
+    order: 1;
+  }
+  .menu-contenitore .menu-responsive .menu-btn {
+    display: none;
+    order: 3;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-2 {
+    max-height: 240px;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .sfondo {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sfondo .tramonto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  .sfondo .testo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2rem;
+    gap: 50px;
+    font-family: "VendSans", sans-serif;
+    margin: 0;
+    margin-bottom: 150px;
+    z-index: 2;
+  }
+  .sfondo .testo .titolo1 {
+    font-weight: 650;
+  }
+  .sfondo .testo .titolo2 {
+    color: hsl(15, 100%, 47%);
+    font-weight: 400;
+  }
+  .sfondo h2 {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -286,6 +423,196 @@ html, body {
   transition: 0.3s ease;
   opacity: 0.9;
 }
+.about .menu-responsive {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .about .menu-responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .logo {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .about .menu-contenitore {
+    z-index: 1000;
+  }
+  .about .menu-contenitore .menu-1 {
+    display: none;
+  }
+  .about .menu-contenitore ul {
+    margin: 0;
+    padding: 0;
+  }
+  .about .menu-contenitore ul a {
+    display: block;
+    padding: 5px;
+  }
+  .about .menu-contenitore ul a:hover {
+    background-color: #f25903;
+  }
+  .about .menu-contenitore .menu-2 {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .about .menu-contenitore .menu-icon {
+    padding: 20px 18px 16px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .about .menu-contenitore .nav-icon {
+    margin-top: 3px;
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+  }
+  .about .menu-contenitore .nav-icon::before, .about .menu-contenitore .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    position: absolute;
+  }
+  .about .menu-contenitore .nav-icon::before {
+    top: 7px;
+  }
+  .about .menu-contenitore .nav-icon::after {
+    top: -7px;
+  }
+  .about .menu-contenitore .menu-responsive {
+    display: flex;
+  }
+  .about .menu-contenitore .menu-responsive .menu-icon {
+    order: 2;
+  }
+  .about .menu-contenitore .menu-responsive .logo {
+    order: 1;
+  }
+  .about .menu-contenitore .menu-responsive .menu-btn {
+    display: none;
+    order: 3;
+  }
+  .about .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-2 {
+    max-height: 240px;
+  }
+  .about .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .about .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .about .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .about .paragrafo {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    margin: auto;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: 10%;
+  }
+  .about .paragrafo h1 {
+    margin-bottom: 45px;
+    color: hsl(15, 100%, 47%);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 320;
+  }
+  .about .freccia {
+    display: flex;
+    position: absolute;
+    margin-top: 180%;
+    margin-left: 30%;
+    width: 25%;
+    height: 10%;
+    transform: rotate(120deg);
+  }
+  .about .indicazioni h2 {
+    display: flex;
+    margin-left: 6%;
+    bottom: 5%;
+    font-size: 1.4rem;
+  }
+  .about .lente-contenitore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about .lente-contenitore .lente {
+    display: none;
+  }
+  .about .lente-contenitore .icone {
+    display: none;
+  }
+  .about .lente-contenitore .colore {
+    margin-bottom: 10%;
+    margin-top: 80%;
+    justify-content: center;
+    padding: 0;
+  }
+  .about .lente-contenitore .colore img {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150%;
+    padding: 0;
+    margin-left: 5%;
+    filter: brightness(75%);
+    transition: 0.1s;
+    filter: hue-rotate(145deg) saturate(600%);
+  }
+  .about .lente-contenitore .colore h2 {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 75%;
+    font-size: 27px;
+    line-height: 35px;
+    font-family: "VendSans", sans-serif;
+    z-index: 3;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .about .lente-contenitore .colore h2 a {
+    text-decoration: none;
+    color: #272727;
+    padding: 5px;
+  }
+  .about .lente-contenitore .colore h2 a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    opacity: 0.9;
+  }
+}
 
 * {
   margin: 0;
@@ -330,28 +657,14 @@ html, body {
 .work .menu-contenitore {
   margin: 0;
   padding: 0;
-  height: 60px;
   background-color: #272727;
   position: fixed;
-  display: flex;
   width: 100%;
-  overflow: hidden;
-  height: 49px;
-  z-index: 2;
 }
 .work .menu-contenitore .menu {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px 15px 65px;
-}
-.work .menu-contenitore .menu #instagram {
+  justify-content: space-around;
   margin-bottom: 7px;
-}
-.work .menu-contenitore .menu #whatsapp {
-  margin-bottom: 7px;
-  padding-right: 10px;
 }
 .work .menu-contenitore li {
   display: inline-flex;
@@ -359,15 +672,13 @@ html, body {
   list-style: none;
   align-items: center;
   font-size: 15.5px;
-  justify-content: space-between;
-  margin-top: 15px;
-  font-family: "VendSans", sans-serif;
-  padding-right: 60px;
+  padding: 1px;
 }
 .work .menu-contenitore a {
   text-decoration: none;
   color: white;
   padding: 5px;
+  font-family: "VendSans", sans-serif;
 }
 .work .menu-contenitore a:hover {
   transform: scale(1.2);
@@ -383,7 +694,8 @@ html, body {
   color: #f25903;
   font-size: 21px;
 }
-.work .project {
+
+.project {
   padding-top: 80px;
   padding-left: 10%;
   padding-right: 10%;
@@ -391,11 +703,11 @@ html, body {
   text-align: center;
   font-family: "VendSans", sans-serif;
 }
-.work .project .progetto-1 {
+.project .progetto-1 {
   margin-bottom: 20px;
   margin-top: 8px;
 }
-.work .project .progetto-1 h1 {
+.project .progetto-1 h1 {
   font-size: 28px;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -403,7 +715,7 @@ html, body {
   font-weight: 450;
   color: #f25903;
 }
-.work .project .progetto-1 p {
+.project .progetto-1 p {
   margin: auto;
   line-height: 25px;
   font-family: "VendSans", sans-serif;
@@ -411,24 +723,24 @@ html, body {
   font-weight: 350;
   font-size: 15px;
 }
-.work .project .immagini {
+.project .immagini {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 120px;
   margin-bottom: -45px;
 }
-.work .project .immagini img {
+.project .immagini img {
   max-width: 100%;
   height: auto;
 }
-.work .project .telefono {
+.project .telefono {
   width: 300px;
 }
-.work .project .pc {
+.project .pc {
   width: 570px;
 }
-.work .project .elenco {
+.project .elenco {
   text-align: center;
   margin-top: -160px;
   inline-size: 700px;
@@ -436,7 +748,7 @@ html, body {
   margin-top: -160px;
   margin-left: 470px;
 }
-.work .project .elenco .titolo-elenco {
+.project .elenco .titolo-elenco {
   font-size: 20px;
   text-align: center;
   padding-bottom: 15px;
@@ -446,7 +758,7 @@ html, body {
   z-index: -1;
   font-style: italic;
 }
-.work .project .elenco .liste {
+.project .elenco .liste {
   display: flex;
   justify-content: right;
   gap: 80px;
@@ -457,24 +769,25 @@ html, body {
   font-weight: 350;
   font-size: 15px;
 }
-.work .project .elenco .liste ul {
+.project .elenco .liste ul {
   list-style: disc;
 }
-.work .project .elenco .liste ul li {
+.project .elenco .liste ul li {
   line-height: 25px;
   font-size: 15px;
   color: #272727;
 }
-.work .project-2 {
+
+.project-2 {
   padding: 60px 10% 55px;
   text-align: center;
   font-family: "VendSans", sans-serif;
 }
-.work .project-2 .progetto-2 {
+.project-2 .progetto-2 {
   margin-bottom: 10px;
   margin-top: 15px;
 }
-.work .project-2 .progetto-2 h1 {
+.project-2 .progetto-2 h1 {
   font-size: 28px;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -482,7 +795,7 @@ html, body {
   font-weight: 450;
   color: #f25903;
 }
-.work .project-2 .progetto-2 p {
+.project-2 .progetto-2 p {
   margin: auto;
   line-height: 25px;
   font-family: "VendSans", sans-serif;
@@ -493,14 +806,14 @@ html, body {
   line-height: 35px;
   padding-bottom: -20px;
 }
-.work .project-2 .immagini-elenco {
+.project-2 .immagini-elenco {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 80px;
   padding-top: 10px;
 }
-.work .project-2 .immagini-elenco .elenco-2 {
+.project-2 .immagini-elenco .elenco-2 {
   inline-size: 400px;
   text-align: left;
   line-height: 25px;
@@ -511,7 +824,7 @@ html, body {
   line-height: 35px;
   margin-top: 10px;
 }
-.work .project-2 .immagini-elenco .titolo-elenco {
+.project-2 .immagini-elenco .titolo-elenco {
   font-size: 20px;
   text-align: center;
   padding-bottom: -25px;
@@ -519,18 +832,18 @@ html, body {
   font-weight: 450;
   color: #f25903;
 }
-.work .project-2 .immagini-elenco .immagine-tablet {
+.project-2 .immagini-elenco .immagine-tablet {
   position: relative;
   width: 590px;
 }
-.work .project-2 .immagini-elenco .immagine-tablet .tablet {
+.project-2 .immagini-elenco .immagine-tablet .tablet {
   width: 600px;
   height: 450px;
   position: relative;
   pointer-events: none;
   z-index: 3;
 }
-.work .project-2 .immagini-elenco .immagine-tablet .tablet-schermo {
+.project-2 .immagini-elenco .immagine-tablet .tablet-schermo {
   position: absolute;
   top: 30px;
   left: 20px;
@@ -539,13 +852,249 @@ html, body {
   overflow: hidden;
   z-index: 2;
 }
-.work .project-2 .immagini-elenco .immagine-tablet .tablet-schermo img {
+.project-2 .immagini-elenco .immagine-tablet .tablet-schermo img {
   width: 550px;
   height: 392px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.menu-responsive {
+  display: none;
+}
+
+.hotel {
+  display: none;
+}
+
+.immagini-smartphone {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .work {
+    width: 100%;
+  }
+  .menu-responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 0px;
+    font-family: "VendSans", sans-serif;
+  }
+  .menu-contenitore .menu-1 {
+    display: none;
+  }
+  .menu-contenitore ul {
+    margin: 0;
+    padding: 0;
+  }
+  .menu-contenitore ul a {
+    display: block;
+    padding: 20px;
+  }
+  .menu-contenitore ul a:hover {
+    background-color: #f25903;
+  }
+  .menu-contenitore .menu-2 {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    z-index: 5;
+  }
+  .menu-contenitore .menu-icon {
+    padding: 20px 18px 16px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .menu-contenitore .nav-icon {
+    margin-top: 3px;
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+  }
+  .menu-contenitore .nav-icon::before, .menu-contenitore .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    position: absolute;
+  }
+  .menu-contenitore .nav-icon::before {
+    top: 7px;
+  }
+  .menu-contenitore .nav-icon::after {
+    top: -7px;
+  }
+  .menu-contenitore .menu-responsive {
+    display: flex;
+  }
+  .menu-contenitore .menu-responsive .menu-icon {
+    order: 2;
+  }
+  .menu-contenitore .menu-responsive .logo {
+    order: 1;
+  }
+  .menu-contenitore .menu-responsive .menu-btn {
+    display: none;
+    order: 3;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-2 {
+    max-height: 240px;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .progetto-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    position: relative;
+    padding-bottom: 8%;
+    margin-bottom: 0;
+  }
+  .immagini {
+    display: none;
+  }
+  .immagini img {
+    display: none;
+  }
+  .elenco {
+    display: none;
+  }
+  .elenco .titolo-elenco {
+    justify-content: first baseline;
+    text-align: center;
+  }
+  .elenco .liste {
+    display: none;
+  }
+  .elenco .liste li {
+    display: none;
+  }
+  .hotel {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+    margin-top: 20%;
+    position: relative;
+  }
+  .hotel img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    padding-top: 15px;
+  }
+  .progetto-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    padding-bottom: 10%;
+    margin: 0;
+  }
+  .progetto-2 p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    inline-size: 1px;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .immagini-elenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .immagini-elenco .immagine-tablet {
+    display: none;
+  }
+  .immagini-elenco .immagini-smartphone {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 180%;
+    padding-left: 0;
+    padding-right: 45%;
+    gap: 15px;
+  }
+  .immagini-elenco .immagini-smartphone img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+  }
+  .immagini-elenco .elenco-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 150%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20%;
+    font-size: 2.5rem;
+  }
+  .immagini-elenco .elenco-2 ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: justify;
+    width: 180%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -624,8 +1173,8 @@ html, body {
   font-size: 21px;
 }
 .contact .form-contatto {
-  padding-top: 38px;
-  padding-bottom: 37px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -719,6 +1268,139 @@ html, body {
 .contact .form-contatto .form .botton .input-invio {
   padding: 15px;
   background-color: rgb(241, 235, 235);
+}
+.contact .menu-responsive {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .contact .menu-responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact .logo {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .contact .menu-contenitore {
+    z-index: 1000;
+  }
+  .contact .menu-contenitore .menu-1 {
+    display: none;
+  }
+  .contact .menu-contenitore ul {
+    margin: 0;
+    padding: 0;
+  }
+  .contact .menu-contenitore ul a {
+    display: block;
+    padding: 5px;
+  }
+  .contact .menu-contenitore ul a:hover {
+    background-color: #f25903;
+  }
+  .contact .menu-contenitore .menu-2 {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    padding-left: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .contact .menu-contenitore .menu-icon {
+    padding: 20px 18px 16px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .contact .menu-contenitore .nav-icon {
+    margin-top: 3px;
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+  }
+  .contact .menu-contenitore .nav-icon::before, .contact .menu-contenitore .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    position: absolute;
+  }
+  .contact .menu-contenitore .nav-icon::before {
+    top: 7px;
+  }
+  .contact .menu-contenitore .nav-icon::after {
+    top: -7px;
+  }
+  .contact .menu-contenitore .menu-responsive {
+    display: flex;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-icon {
+    order: 2;
+  }
+  .contact .menu-contenitore .menu-responsive .logo {
+    order: 1;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-btn {
+    display: none;
+    order: 3;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-2 {
+    max-height: 240px;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .contact .menu-contenitore .menu-responsive .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .contact .form-contatto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50%;
+  }
+  .contact .form-contatto .testo {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0;
+    padding-top: 30%;
+  }
+  .contact .form-contatto .form {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40%;
+  }
+  .contact .form-contatto .form .riga {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact .form-contatto .form .botton {
+    display: flex;
+    text-align: center;
+    padding-bottom: 10%;
+  }
 }
 
 * {
@@ -953,6 +1635,344 @@ html, body {
   z-index: 5;
   transform: rotate(90deg);
 }
+@media screen and (max-width: 424px) {
+  .passioni .menu-contenitore {
+    display: flex;
+    position: relative;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .passioni .paragrafo-1 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    padding-right: 5%;
+    max-width: 100%;
+    margin-top: 8%;
+  }
+  .passioni .paragrafo-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 25px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin-top: 8%;
+    margin-left: 5%;
+  }
+  .passioni .mondo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: invert(-1) brightness(1.4) contrast(1.2);
+    opacity: 0.6;
+    width: 100%;
+  }
+  .passioni .mondo img {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 85%;
+    margin-top: 5%;
+  }
+  .passioni .foto-viaggi {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+  }
+  .passioni .foto-viaggi img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+  }
+  .passioni .foto-viaggi P {
+    font-family: "VendSans", sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 12px;
+    padding: 0;
+  }
+  .passioni .foto-viaggi .ecuador {
+    background-color: #ffffff;
+    padding: 8px 5px 30px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(10deg);
+    margin-top: -2%;
+    margin-left: 12%;
+  }
+  .passioni .foto-viaggi .puntina-ecuador {
+    display: none;
+  }
+  .passioni .foto-viaggi .siviglia {
+    display: none;
+    background-color: #ffffff;
+    padding: 8px 5px 20px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(-12deg);
+    margin-top: -30%;
+    margin-left: 60%;
+  }
+  .passioni .foto-viaggi .puntina-siviglia {
+    display: none;
+  }
+  .passioni .foto-viaggi .madeira {
+    background-color: #ffffff;
+    padding: 8px 5px 20px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(10deg);
+    margin-top: -20%;
+    margin-left: 36.8%;
+  }
+  .passioni .foto-viaggi .puntina-madeira {
+    display: none;
+  }
+  .passioni .foto-viaggi .galapagos {
+    background-color: #ffffff;
+    padding: 8px 5px 20px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(10deg);
+    margin-top: -25%;
+    margin-left: 63%;
+  }
+  .passioni .foto-viaggi .puntina-galapagos {
+    display: none;
+  }
+  .passioni .foto-viaggi .amsterdam {
+    display: none;
+    background-color: #ffffff;
+    padding: 8px 5px 20px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(-15deg);
+    z-index: 1;
+    margin-top: -55%;
+  }
+  .passioni .foto-viaggi .puntina-amsterdam {
+    display: none;
+  }
+  .passioni .foto-viaggi .valencia {
+    display: none;
+    background-color: #ffffff;
+    padding: 8px 5px 20px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(-12deg);
+    margin: -5%;
+  }
+  .passioni .foto-viaggi .puntina-valencia {
+    display: none;
+  }
+  .passioni .foto-viaggi .egitto {
+    display: none;
+    background-color: #ffffff;
+    padding: 8px 5px 10px 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 rgb(61, 61, 61);
+    transform: rotate(-10deg);
+    z-index: 2;
+    margin-top: -45%;
+    margin-left: 8%;
+  }
+  .passioni .foto-viaggi .puntina-egitto {
+    display: none;
+  }
+  .passioni .freccia {
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80%;
+    right: 50%;
+    z-index: 99;
+    transform: rotate(90deg);
+  }
+}
+.passioni .fotografia {
+  position: relative;
+  max-width: 100%;
+  padding-top: 50px;
+  top: 50%;
+}
+.passioni .fotografia h2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-left: -20px;
+  text-align: center;
+  padding-bottom: 8px;
+  color: hsl(15, 100%, 47%);
+  font-weight: 400;
+}
+.passioni .fotografia .paragrafo-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  font-family: "VendSans", sans-serif;
+  font-style: italic;
+  font-weight: 350;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.passioni .fotografia .paragrafo-3.testo {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+.passioni .fotografia .carousel-inner .carousel-item {
+  margin-left: 103px;
+  box-shadow: 5px 5px 15px 0 rgb(61, 61, 61);
+}
+@media screen and (min-width: 425px) and (max-width: 1000px) {
+  .passioni .ecuador, .passioni .madeira, .passioni .galapagos {
+    display: none;
+  }
+  .passioni html, .passioni body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .passioni .menu-contenitore {
+    display: flex;
+    position: relative;
+    bottom: 50%;
+  }
+  .passioni .paragrafo-1 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    padding-right: 5%;
+    max-width: 100%;
+    margin-top: 8%;
+  }
+  .passioni .paragrafo-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 25px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin-top: 8%;
+    margin-left: 5%;
+  }
+  .passioni .mondo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: invert(-1) brightness(1.4) contrast(1.2);
+    opacity: 0.6;
+    width: 100%;
+    margin: 30px 0 0 300px;
+  }
+  .passioni .mondo img {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 85%;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+  }
+  .passioni .foto-viaggi {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+  }
+  .passioni .foto-viaggi img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 1px;
+  }
+  .passioni .foto-viaggi P {
+    font-family: "VendSans", sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 12px;
+    padding: 0;
+  }
+  .passioni .foto-viaggi .puntina-ecuador {
+    display: none;
+  }
+  .passioni .foto-viaggi .siviglia {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-siviglia {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-madeira {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-galapagos {
+    display: none;
+  }
+  .passioni .foto-viaggi .amsterdam {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-amsterdam {
+    display: none;
+  }
+  .passioni .foto-viaggi .valencia {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-valencia {
+    display: none;
+  }
+  .passioni .foto-viaggi .egitto {
+    display: none;
+  }
+  .passioni .foto-viaggi .puntina-egitto {
+    display: none;
+  }
+  .passioni .freccia {
+    display: none;
+  }
+}
 
 * {
   margin: 0;
@@ -992,6 +2012,7 @@ html, body {
 .fotografia {
   position: relative;
   margin-top: 15px;
+  padding-bottom: 10px;
 }
 .fotografia h2 {
   display: flex;
@@ -1017,9 +2038,83 @@ html, body {
 .fotografia .paragrafo-3.testo {
   padding-top: 35px;
   margin-left: 150px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .fotografia .carousel-inner .carousel-item {
   margin-left: 103px;
   box-shadow: 5px 5px 15px 0 rgb(61, 61, 61);
+}
+.fotografia .fotografia-smartphone {
+  display: none;
+}
+@media screen and (max-width: 1450px) {
+  .fotografia body {
+    font-family: "VendSans", sans-serif;
+  }
+  .fotografia html, .fotografia body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .fotografia .fotografia {
+    margin: 0;
+  }
+  .fotografia h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 8px;
+    color: hsl(15, 100%, 47%);
+    font-weight: 400;
+  }
+  .fotografia .paragrafo-3 {
+    line-height: 25px;
+    font-family: "VendSans", sans-serif;
+    font-style: italic;
+    font-weight: 350;
+    font-size: 15px;
+    box-sizing: border-box;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 35px;
+    max-width: 100%;
+    padding: 5%;
+  }
+  .fotografia .paragrafo-3.testo {
+    overflow: hidden;
+    box-sizing: border-box;
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+    text-align: center;
+  }
+  .fotografia .fotografia-pc {
+    display: none;
+  }
+  .fotografia .fotografia-smartphone {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .fotografia .fotografia-smartphone img {
+    width: 100%;
+    height: 220px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    box-shadow: 5px 5px 15px 0 rgb(61, 61, 61);
+  }
 }/*# sourceMappingURL=main.css.map */
