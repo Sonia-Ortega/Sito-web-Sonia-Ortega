@@ -51,6 +51,7 @@ html, body {
 .fotografia {
   position: relative;
   margin-top: 15px;
+  padding-bottom: 10px;
 
   h2 {
     display: flex;
@@ -74,7 +75,7 @@ html, body {
    .paragrafo-3.testo {
     padding-top: 35px;
     margin-left: 150px; 
-     padding-bottom: 30px;
+    padding-bottom: 35px;
 
   
    }
@@ -86,10 +87,101 @@ html, body {
       box-shadow: 5px 5px 15px 0 rgb(61, 61, 61);
     }
 
-  } 
+  }
+
+  .fotografia-smartphone {
+    display: none;
+  }
+  
+
+  @media screen and (max-width:1450px) {
 
     
+  body {
+  font-family: "VendSans", sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .fotografia {
+    margin: 0;
+  }
+
+
+
+  h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 8px;
+    color: $third-color;
+    font-weight: 400;
+  }
+
+    .paragrafo-3 {
+        @include primary-text;
+        box-sizing: border-box;
+         position: static;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        text-align: center; 
+        padding-bottom: 35px;
+        max-width: 100%;
+        
+        padding: 5%;
+    }
+
+   .paragrafo-3.testo {
+        
+        overflow: hidden;
+        box-sizing: border-box;
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10%;
+        text-align: center;
+
+  
+   }
+
+   .fotografia-pc {
+    display: none;
+   }
+
+  .fotografia-smartphone {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 5px 5px 15px 0 rgb(61, 61, 61);
+  }  
+    
+  }
 
 }
 
+
+
+
+
+}    
 
